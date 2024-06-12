@@ -1,0 +1,16 @@
+li {
+  color: #4b5563;
+  padding-bottom: 16px;
+}
+
+li:nth-child(1) {
+  padding-top: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  li{
+    padding: 16px ;
+  }
+
+}
