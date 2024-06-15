@@ -3,8 +3,6 @@ import logo from "../../assets/images/logo.svg";
 import Exit from "../../assets/icons/exit";
 
 export default function MobileMenu(props) {
-
-
   return (
         <div className="bg-gray900/50 h-screen w-full flex flex-row-reverse fixed right-0 top-0 z-50">
           <div className="w-[320px] bg-default shadow-2xl h-screen">

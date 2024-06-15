@@ -4,8 +4,7 @@ import logo from "../../assets/images/logo.svg";
 import MobileMenu from "../mobile-menu/mobile-menu";
 import Navbar from "../navbar";
 
-export default function Header(props) {
-
+export default function Header() {
   const [togglemenu, setToggleMenu] = useState(false);
 
   const openMobileMenuHandler = () => {
@@ -17,21 +16,21 @@ export default function Header(props) {
   };
 
   return (
-    <div className="flex justify-between h-[68px] items-center p-4">
-      <div>
+    <div className="flex justify-between h-[68px] items-center p-4 lg:px-20 lg:py-4">
+      <div className="lg:pl-8">
         <img src={logo} alt="logo" />
       </div>
       <div className="lg:hidden">
         <Hug onClick={openMobileMenuHandler} />
       </div>
-      <div className="hidden lg:flex justify-center items-center">
+      <div className="hidden lg:flex justify-center items-center pr-8">
         <Navbar />
-        <div className="flex justify-center px-4 pt-4">
-          <button className="dn-btn">Download CV</button>
-        </div>
+        <button className="bg-gray900 p-1 rounded-xl text-sm text-default w-full px-4 py-1.5">
+          Download CV
+        </button>
       </div>
 
-     {togglemenu && <MobileMenu onClick={closeMobileMenuHandler} />} 
+      {togglemenu && <MobileMenu onClick={closeMobileMenuHandler} />}
     </div>
   );
 }
