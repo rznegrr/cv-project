@@ -9,7 +9,7 @@ import Figma from "../../assets/icons/figma";
 
 export default function ContactMe() {
   return (
-    <div className="py-16 bg-gray50 px-4 lg:py-24 lg:px-20">
+    <div className="py-16 bg-gray50 px-4 md:px-12 lg:py-24 lg:px-20">
       <div>
         <Button className={"pb-6"}>Get in touch</Button>
         <p className="text-center text-lg text-gray600">

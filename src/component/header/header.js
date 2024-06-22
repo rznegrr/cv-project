@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <div className="flex justify-between h-[68px] items-center p-4 lg:px-20 lg:py-4">
+    <div className="flex justify-between h-[68px] items-center p-4 md:px-12 lg:px-20 lg:py-4">
       <div className="lg:pl-8">
         <img src={logo} alt="logo" />
       </div>

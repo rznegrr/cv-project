@@ -9,7 +9,7 @@ import Green from "../../assets/icons/green";
 
 export default function Hero() {
   return (
-    <div className="py-16 px-4 lg:px-20 lg:py-24 lg:flex lg:flex-row-reverse lg:justify-between">
+    <div className="py-16 px-4 md:px-12 lg:px-20 lg:py-24 lg:flex lg:flex-row-reverse lg:justify-between">
       <div className="relative flex justify-center h-[300px] lg:w-[400px] lg:h-[360px]">
         <img
           src={ProfilePic}

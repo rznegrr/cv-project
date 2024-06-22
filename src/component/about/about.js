@@ -5,7 +5,7 @@ import aboutPic from "../../assets/images/about-pic.png";
 
 export default function About() {
   return (
-    <div className="py-16 bg-gray50 lg:py-24 lg:px-20">
+    <div className="py-16 bg-gray50 md:px-12 lg:py-24 lg:px-20">
       <Button className={"pb-6 lg:pb-12"}>About me</Button>
       <div className="px-4 lg:flex lg:justify-between">
         <div className="relative flex justify-center h-[380px] lg:h-[520px] lg:w-[440px]">
