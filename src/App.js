@@ -1,10 +1,11 @@
 import Layout from "./component/layout";
+import { ThemeProvider } from "./store/themeContext";
 
 function App() {
   return (
-    <div>
-      <Layout />
-    </div>
+      <ThemeProvider>
+        <Layout />
+      </ThemeProvider>
   );
 }
 

@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     colors:{
       'default' : '#ffffff',
@@ -10,7 +12,11 @@ module.exports = {
       'gray400' : '#9ca3af',
       'gray600' : '#4b5563',
       'gray700' : '#374151',
-      'gray900' : '#111827'
+      'gray900' : '#111827',
+      'darkgray-d' : '#030712',
+      'darkgray50' : '#111827',
+      'darkgray600' : '#d1d5db',
+      'darkgray900' : '#f9fafb'
     },
   },
   plugins: [],

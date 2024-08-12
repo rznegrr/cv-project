@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Share() {
+export default function Share(props) {
   return (
-    <div>
+    <div className="cursor-pointer" onClick={props.onClick}>
       <svg
         width="36"
         height="36"

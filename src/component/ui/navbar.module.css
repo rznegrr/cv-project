@@ -1,6 +1,7 @@
 li {
   color: #4b5563;
   padding-bottom: 16px;
+  cursor: pointer;
 }
 
 li:nth-child(1) {
@@ -8,9 +9,13 @@ li:nth-child(1) {
 }
 
 @media only screen and (min-width: 1024px) {
-
   li{
     padding: 16px ;
   }
+}
 
+@media only screen and (max-width: 1024px) {
+  li{
+    padding-left: 16px ;
+  }
 }

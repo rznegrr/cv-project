@@ -1,30 +1,31 @@
 import React from "react";
-import Button from "../button";
-import ProjectPic from "../../assets/images/projectPic.png";
+import Button from "../ui/button";
 import Share from "../../assets/icons/share";
 
-export default function WorkSample() {
+export default function WorkSample(props) {
+  const handleClickUrl = (url) => {
+    window.open(url, '_blank')
+  }
+
+  const { img, title, desc, tech, url } = props;
   return (
     <div className="shadow-md rounded-xl mt-6 lg:mt-12 lg:flex items-center">
-      <div className="p-8 lg:p-12 stroke-1 stroke-gray100 bg-gray50 rounded-t-xl">
-        <img src={ProjectPic} className="shadow-lg rounded-lg lg:w-[480px] md:m-auto" alt="project-demo"/>
+      <div className="p-8 lg:p-12 stroke-1 stroke-gray100 bg-gray50 rounded-t-xl ">
+        <img
+          src={img}
+          className="shadow-lg rounded-lg md:m-auto lg:max-w-80 lg:max-h-72"
+          alt="project-demo"
+        />
       </div>
       <div className="p-8">
-        <p className="text-left font-semibold">Title</p>
-        <p className="py-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec
-          urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia curae.
-        </p>
+        <p className="text-left font-semibold text-lg">{title}</p>
+        <p className="py-6 text-gray600">{desc}</p>
         <div className="flex flex-wrap gap-x-[8px] gap-y-[8px] pb-6">
-          <Button>React</Button>
-          <Button>Next js</Button>
-          <Button>Tailwindcss</Button>
-          <Button>Firebase</Button>
-          <Button>Git</Button>
-          <Button>Figma</Button>
+          {tech.map((Tname,index) => (
+          <Button key={index}>{Tname}</Button>
+          ))}
         </div>
-      <Share/>
+        <Share onClick={()=>handleClickUrl(url)}/>
       </div>
     </div>
   );
