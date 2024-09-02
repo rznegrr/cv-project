@@ -19,12 +19,12 @@ export default function Hero() {
           <img
             src={ProfilePic}
             alt="profile"
-            className="absolute z-10 h-[270px] lg:h-[300px] lg:w-[260px]"
+            className="absolute z-10 h-[270px] lg:h-[300px] lg:w-[240px]"
           />
           <img
             src={ProfileBg}
             alt="profile-background"
-            className="absolute pt-5 lg:h-[320px] lg:w-[280px] lg:pt-0 lg:top-5 lg:right-[-25px] xl:right-[30px]"
+            className="absolute pt-5 lg:h-[320px] lg:w-[270px] lg:pt-0 lg:top-5 lg:right-[-25px] xl:right-[30px]"
           />
         </div>
         <div className="pt-12 lg:w-[768px]">

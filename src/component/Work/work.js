@@ -4,6 +4,7 @@ import Button from "../ui/button";
 import { Element } from "react-scroll";
 import geshniz from "../../assets/images/geshniz.png";
 import narcis from "../../assets/images/narcis.png";
+import shopCenter from "../../assets/images/shopCenter.png";
 
 export default function Work() {
   return (
@@ -17,18 +18,23 @@ export default function Work() {
           img={geshniz}
           title="Geshniz"
           desc="This site is a single-page food ordering website written with NextJS and has a user panel, shopping cart, and products that use Redux Toolkit technology."
-          tech={["Redux-toolkit", "tailwind", "nextJs"]}
-          url={'https://rznegrr.github.io/geshniiz-project/'}
+          tech={["Redux-toolkit", "tailwindCss", "nextJs"]}
+          url={"geshniiz.vercel.app"}
         />
         <WorkSample
           img={narcis}
           title="Narcis shop"
           desc="This site is a cosmetics website that was created with WordPress, and the main page and contact us, this website was designed with Elementor."
           tech={["wordpress", "elementor"]}
-          url={'https://narcisshop.com'}
+          url={"https://narcisshop.com"}
         />
-        {/* <WorkSample />
-        <WorkSample /> */}
+        <WorkSample
+          img={shopCenter}
+          title="Shop Center"
+          desc="This site is a store site based on a design in Figma, and the products of this site are built in Google Firebase. all the site's styling is done with TailwindCss."
+          tech={["nextJs", "tailwindCss", "Redux-toolkit", "firebase"]}
+          url={"http://shopcenter-eosin.vercel.app"}
+        />
       </div>
     </Element>
   );

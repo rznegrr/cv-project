@@ -21,8 +21,8 @@ export default function Skills() {
         </p>
         <div className="grid grid-cols-3 gap-3 gap-y-12 place-items-center md:grid-cols-4 lg:grid-cols-7 lg:gap-y-12">
           <Javascript />
-          <NextJs />
           <Reactjs />
+          <NextJs />
           <Redux/>
           <Bootstrap/>
           <Tailwind />
