@@ -29,7 +29,9 @@ export default function Header() {
         <div className="hidden lg:flex justify-center items-center pr-8">
           <Navbar />
           <Divide />
-          <DownloadCvBtn className='px-4 py-1.5 ml-4'/>
+          <a href="./negar-rezazadeh-resume.pdf" download={'negar-rezazadeh-resume.pdf'}>
+            <DownloadCvBtn className="px-4 py-1.5 ml-4" />
+          </a>
         </div>
 
         {togglemenu && <MobileMenu onClick={closeMobileMenuHandler} />}
