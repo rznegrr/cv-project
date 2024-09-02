@@ -19,7 +19,7 @@ export default function Work() {
           title="Geshniz"
           desc="This site is a single-page food ordering website written with NextJS and has a user panel, shopping cart, and products that use Redux Toolkit technology."
           tech={["Redux-toolkit", "tailwindCss", "nextJs"]}
-          url={"geshniiz.vercel.app"}
+          url={"https://geshniz.vercel.app/"}
         />
         <WorkSample
           img={narcis}
@@ -33,7 +33,7 @@ export default function Work() {
           title="Shop Center"
           desc="This site is a store site based on a design in Figma, and the products of this site are built in Google Firebase. all the site's styling is done with TailwindCss."
           tech={["nextJs", "tailwindCss", "Redux-toolkit", "firebase"]}
-          url={"http://shopcenter-eosin.vercel.app"}
+          url={"https://shopcenter-eosin.vercel.app/"}
         />
       </div>
     </Element>
